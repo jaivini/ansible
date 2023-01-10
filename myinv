@@ -1,8 +1,8 @@
 [webservers]
-13.233.12.12 ansible_user=ec2-user ansible_private-key=~/.ssh/id_rsa
+13.233.12.12 ansible_user=ec2-user a
 [appserver]
-13.232.178.102 ansible_user=ec2-user ansible_private-key=~/.ssh/id_rsa
+13.232.178.102 ansible_user=ec2-user
 [myserver]
-13.127.48.12 ansible_user=centos ansible_private-key=~/.ssh/id_rsa
+13.127.48.12 ansible_user=centos 
 [tomcatserver]
 52.66.178.195 ansible_user=ec2-user 
