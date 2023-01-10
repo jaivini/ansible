@@ -5,4 +5,4 @@
 [myserver]
 13.127.48.12 ansible_user=centos ansible_private-key=~/.ssh/id_rsa
 [tomcatserver]
-52.66.178.195 ansible_user=ec2-user ansible_private-key=~/.ssh/id_rsa
+52.66.178.195 ansible_user=ec2-user 
