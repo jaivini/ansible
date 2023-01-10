@@ -1,0 +1,36 @@
+---
+- hosts: all
+  tasks:
+  - name: install apache
+    yum:
+      name: httpd
+      state: latest
+    become: true
+    tags:
+      - install
+  - name: start apache
+    service:
+      name: httpd
+      state: started
+    become: true
+    tags:
+       - started
+  - name: copy html file
+    copy:
+      src=/home/centos/index.html
+      dest=/var/www/html/
+    become: true
+    tags:
+      - copy
+  - name: adding new line
+    lineinfile:
+      dest=/var/www/html/index.html
+      line="<h1>good mrg</h1>"
+    become: true
+    tags:
+      - stop
+  - name: stop apache
+    service:
+      name: httpd
+      state: stopped
+    become: true
