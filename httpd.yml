@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: tomcatserver
   tasks:
   - name: install apache
     yum:
