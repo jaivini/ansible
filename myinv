@@ -1,5 +1,5 @@
 [webservers]
-13.233.12.12 ansible_user=ec2-user a
+13.233.12.12 ansible_user=ec2-user 
 [appserver]
 13.232.178.102 ansible_user=ec2-user
 [myserver]
